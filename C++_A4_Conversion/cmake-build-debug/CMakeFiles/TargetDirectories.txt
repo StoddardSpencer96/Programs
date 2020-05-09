@@ -1,3 +1,3 @@
-E:/School_Files/C++/CLionProjects/Assignment4/cmake-build-debug/CMakeFiles/Assignment4.dir
-E:/School_Files/C++/CLionProjects/Assignment4/cmake-build-debug/CMakeFiles/edit_cache.dir
-E:/School_Files/C++/CLionProjects/Assignment4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+E:/School_Files/C++/CLionProjects/Conversion/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+E:/School_Files/C++/CLionProjects/Conversion/cmake-build-debug/CMakeFiles/Conversion.dir
+E:/School_Files/C++/CLionProjects/Conversion/cmake-build-debug/CMakeFiles/edit_cache.dir

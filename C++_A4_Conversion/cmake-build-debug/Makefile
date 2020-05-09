@@ -47,24 +47,13 @@ RM = "C:\Program Files\JetBrains\CLion 2019.1.4\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\School_Files\C++\CLionProjects\Assignment4
+CMAKE_SOURCE_DIR = E:\School_Files\C++\CLionProjects\Conversion
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\School_Files\C++\CLionProjects\Assignment4\cmake-build-debug
+CMAKE_BINARY_DIR = E:\School_Files\C++\CLionProjects\Conversion\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2019.1.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -77,11 +66,22 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	"C:\Program Files\JetBrains\CLion 2019.1.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\School_Files\C++\CLionProjects\Assignment4\cmake-build-debug\CMakeFiles E:\School_Files\C++\CLionProjects\Assignment4\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\School_Files\C++\CLionProjects\Conversion\cmake-build-debug\CMakeFiles E:\School_Files\C++\CLionProjects\Conversion\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\School_Files\C++\CLionProjects\Assignment4\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\School_Files\C++\CLionProjects\Conversion\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -110,44 +110,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Assignment4
+# Target rules for targets named Conversion
 
 # Build rule for target.
-Assignment4: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 Assignment4
-.PHONY : Assignment4
+Conversion: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Conversion
+.PHONY : Conversion
 
 # fast build rule for target.
-Assignment4/fast:
-	$(MAKE) -f CMakeFiles\Assignment4.dir\build.make CMakeFiles/Assignment4.dir/build
-.PHONY : Assignment4/fast
-
-OriginalCPP.obj: OriginalCPP.cpp.obj
-
-.PHONY : OriginalCPP.obj
-
-# target to build an object file
-OriginalCPP.cpp.obj:
-	$(MAKE) -f CMakeFiles\Assignment4.dir\build.make CMakeFiles/Assignment4.dir/OriginalCPP.cpp.obj
-.PHONY : OriginalCPP.cpp.obj
-
-OriginalCPP.i: OriginalCPP.cpp.i
-
-.PHONY : OriginalCPP.i
-
-# target to preprocess a source file
-OriginalCPP.cpp.i:
-	$(MAKE) -f CMakeFiles\Assignment4.dir\build.make CMakeFiles/Assignment4.dir/OriginalCPP.cpp.i
-.PHONY : OriginalCPP.cpp.i
-
-OriginalCPP.s: OriginalCPP.cpp.s
-
-.PHONY : OriginalCPP.s
-
-# target to generate assembly for a file
-OriginalCPP.cpp.s:
-	$(MAKE) -f CMakeFiles\Assignment4.dir\build.make CMakeFiles/Assignment4.dir/OriginalCPP.cpp.s
-.PHONY : OriginalCPP.cpp.s
+Conversion/fast:
+	$(MAKE) -f CMakeFiles\Conversion.dir\build.make CMakeFiles/Conversion.dir/build
+.PHONY : Conversion/fast
 
 main.obj: main.cpp.obj
 
@@ -155,7 +128,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) -f CMakeFiles\Assignment4.dir\build.make CMakeFiles/Assignment4.dir/main.cpp.obj
+	$(MAKE) -f CMakeFiles\Conversion.dir\build.make CMakeFiles/Conversion.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -164,7 +137,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles\Assignment4.dir\build.make CMakeFiles/Assignment4.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles\Conversion.dir\build.make CMakeFiles/Conversion.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -173,7 +146,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles\Assignment4.dir\build.make CMakeFiles/Assignment4.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles\Conversion.dir\build.make CMakeFiles/Conversion.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -182,12 +155,9 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... Assignment4
-	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... OriginalCPP.obj
-	@echo ... OriginalCPP.i
-	@echo ... OriginalCPP.s
+	@echo ... Conversion
+	@echo ... edit_cache
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

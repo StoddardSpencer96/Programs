@@ -58,45 +58,45 @@ RM = "C:\Program Files\JetBrains\CLion 2019.1.4\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\School_Files\C++\CLionProjects\Assignment4
+CMAKE_SOURCE_DIR = E:\School_Files\C++\CLionProjects\Conversion
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\School_Files\C++\CLionProjects\Assignment4\cmake-build-debug
+CMAKE_BINARY_DIR = E:\School_Files\C++\CLionProjects\Conversion\cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/Assignment4.dir
+# Target rules for target CMakeFiles/Conversion.dir
 
 # All Build rule for target.
-CMakeFiles/Assignment4.dir/all:
-	$(MAKE) -f CMakeFiles\Assignment4.dir\build.make CMakeFiles/Assignment4.dir/depend
-	$(MAKE) -f CMakeFiles\Assignment4.dir\build.make CMakeFiles/Assignment4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\School_Files\C++\CLionProjects\Assignment4\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target Assignment4"
-.PHONY : CMakeFiles/Assignment4.dir/all
+CMakeFiles/Conversion.dir/all:
+	$(MAKE) -f CMakeFiles\Conversion.dir\build.make CMakeFiles/Conversion.dir/depend
+	$(MAKE) -f CMakeFiles\Conversion.dir\build.make CMakeFiles/Conversion.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\School_Files\C++\CLionProjects\Conversion\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target Conversion"
+.PHONY : CMakeFiles/Conversion.dir/all
 
 # Include target in all.
-all: CMakeFiles/Assignment4.dir/all
+all: CMakeFiles/Conversion.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Assignment4.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\School_Files\C++\CLionProjects\Assignment4\cmake-build-debug\CMakeFiles 3
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/Assignment4.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\School_Files\C++\CLionProjects\Assignment4\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/Assignment4.dir/rule
+CMakeFiles/Conversion.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\School_Files\C++\CLionProjects\Conversion\cmake-build-debug\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/Conversion.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\School_Files\C++\CLionProjects\Conversion\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/Conversion.dir/rule
 
 # Convenience name for target.
-Assignment4: CMakeFiles/Assignment4.dir/rule
+Conversion: CMakeFiles/Conversion.dir/rule
 
-.PHONY : Assignment4
-
-# clean rule for target.
-CMakeFiles/Assignment4.dir/clean:
-	$(MAKE) -f CMakeFiles\Assignment4.dir\build.make CMakeFiles/Assignment4.dir/clean
-.PHONY : CMakeFiles/Assignment4.dir/clean
+.PHONY : Conversion
 
 # clean rule for target.
-clean: CMakeFiles/Assignment4.dir/clean
+CMakeFiles/Conversion.dir/clean:
+	$(MAKE) -f CMakeFiles\Conversion.dir\build.make CMakeFiles/Conversion.dir/clean
+.PHONY : CMakeFiles/Conversion.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/Conversion.dir/clean
 
 .PHONY : clean
 

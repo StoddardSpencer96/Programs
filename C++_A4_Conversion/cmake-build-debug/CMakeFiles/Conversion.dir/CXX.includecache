@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/School_Files/C++/CLionProjects/Conversion/ConvertFile.h
+iostream
+-
+fstream
+-
+exception
+-
+
+E:/School_Files/C++/CLionProjects/Conversion/main.cpp
+iostream
+-
+fstream
+-
+exception
+-
+ConvertFile.h
+E:/School_Files/C++/CLionProjects/Conversion/ConvertFile.h
+
