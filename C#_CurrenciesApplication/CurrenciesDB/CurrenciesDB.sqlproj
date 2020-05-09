@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>CurrenciesDB</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{4aa48a62-a708-417f-8637-467795647456}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.SqlAzureV12DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>CurrenciesDB</RootNamespace>
+    <AssemblyName>CurrenciesDB</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="StoredProcedures" />
+    <Folder Include="StoredProcedures\Currencies" />
+    <Folder Include="StoredProcedures\Types" />
+    <Folder Include="StoredProcedures\Countries" />
+    <Folder Include="StoredProcedures\Colours" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Currencies.sql" />
+    <Build Include="Countries.sql" />
+    <Build Include="Types.sql" />
+    <Build Include="Colours.sql" />
+    <Build Include="Currencies_Types.sql" />
+    <Build Include="StoredProcedures\Currencies\DeleteCurrency.sql" />
+    <Build Include="StoredProcedures\Currencies\UpdateCurrency.sql" />
+    <Build Include="StoredProcedures\Colours\DeleteColour.sql" />
+    <Build Include="StoredProcedures\Types\DeleteType.sql" />
+    <Build Include="StoredProcedures\Types\UpdateType.sql" />
+    <Build Include="StoredProcedures\Colours\UpdateColour.sql" />
+    <Build Include="StoredProcedures\Countries\UpdateCountry.sql" />
+    <Build Include="StoredProcedures\Currencies\GetCurrency.sql" />
+    <Build Include="StoredProcedures\Currencies\AddCurrency.sql" />
+    <Build Include="StoredProcedures\Colours\GetColour.sql" />
+    <Build Include="StoredProcedures\Countries\GetCountry.sql" />
+    <Build Include="StoredProcedures\Types\GetType.sql" />
+    <Build Include="StoredProcedures\Colours\AddColour.sql" />
+    <Build Include="StoredProcedures\Countries\AddCountry.sql" />
+    <Build Include="StoredProcedures\Types\AddType.sql" />
+    <Build Include="StoredProcedures\Countries\DeleteCountry.sql" />
+    <Build Include="StoredProcedures\Colours\GetOneColour.sql" />
+    <Build Include="StoredProcedures\Countries\GetOneCountry.sql" />
+    <Build Include="StoredProcedures\Currencies\GetOneCurrency.sql" />
+    <Build Include="StoredProcedures\Types\GetOneType.sql" />
+    <Build Include="StoredProcedures\Currencies\GetCurrencyByColor.sql" />
+    <Build Include="StoredProcedures\Currencies\GetCurrencyByType.sql" />
+    <Build Include="StoredProcedures\Currencies\GetCurrencyByCountry.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="CurrenciesDB.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Script.AddSeedData.sql" />
+  </ItemGroup>
+</Project>

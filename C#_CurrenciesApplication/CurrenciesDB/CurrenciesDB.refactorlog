@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="d90c6a1a-4ab0-45d1-87ce-26e18fffd2ce" ChangeDateTime="09/19/2019 12:02:36">
+    <Property Name="ElementName" Value="[dbo].[Countries].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Countries]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CountryCode" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4aa9efcc-1b50-4973-848c-b7305ebc5af7" ChangeDateTime="09/19/2019 12:34:42">
+    <Property Name="ElementName" Value="[dbo].[Types].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Types]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Type" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2436b0cd-998b-4d62-83ae-05906b461ca5" ChangeDateTime="10/01/2019 11:43:26">
+    <Property Name="ElementName" Value="[dbo].[Types].[Banknotes]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Types]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Name" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9f844965-97a8-4193-bb7a-84e7dac8fddd" ChangeDateTime="10/01/2019 11:44:09">
+    <Property Name="ElementName" Value="[dbo].[Currencies].[Type]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Currencies]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ColourId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="67d18227-8326-4ede-be32-ac3ce87de6f5" ChangeDateTime="10/02/2019 20:07:37">
+    <Property Name="ElementName" Value="[dbo].[Types].[Type]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Types]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d4440122-0450-48d6-b940-6edd42ce56e2" ChangeDateTime="10/02/2019 20:15:45">
+    <Property Name="ElementName" Value="[dbo].[Currencies_Types].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Currencies_Types]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TypeId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c542266d-b99b-4d80-a4a9-3c56bf3aaf31" ChangeDateTime="10/02/2019 20:35:28">
+    <Property Name="ElementName" Value="[dbo].[Currencies_Types].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Currencies_Types]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TypeId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f6da793d-2ec7-411d-a1b8-057a4516c706" ChangeDateTime="10/06/2019 18:59:31">
+    <Property Name="ElementName" Value="[dbo].[Currencies_Types].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Currencies_Types]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TypeId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ff204a18-d7f1-43ad-af17-04be997e7063" ChangeDateTime="10/07/2019 15:37:53">
+    <Property Name="ElementName" Value="[dbo].[Currencies].[CountryOfOrigin]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Currencies]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CountryCode" />
+  </Operation>
+</Operations>
